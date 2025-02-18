@@ -1,0 +1,60 @@
+/* src/components/Resume/ResumePage.css */
+
+.resume-page {
+    padding: 4rem 2rem;
+    text-align: center;
+    color: white;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #ff2e63;
+    margin-bottom: 2rem;
+  }
+  
+  .resume-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .resume-section {
+    background: #1c1c1c;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 10px 20px rgba(255, 46, 99, 0.5);
+    text-align: left;
+  }
+  
+  .resume-section h3 {
+    color: #ff2e63;
+    margin-bottom: 1rem;
+  }
+  
+  .resume-section p {
+    margin: 0.5rem 0;
+    color: #ccc;
+  }
+  
+  .resume-section ul {
+    padding-left: 20px;
+    color: #ddd;
+  }
+  
+  .resume-section ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .resume-container {
+      max-width: 100%;
+    }
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+  }

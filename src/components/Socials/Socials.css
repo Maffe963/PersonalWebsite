@@ -1,0 +1,52 @@
+/* src/Socials.css */
+
+.socials-container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 2rem;
+  }
+  
+  .social-group {
+    text-align: center;
+  }
+  
+  .social-group h3 {
+    color: #a0a0a0;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icons a {
+    background: #1c1c1c;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .social-icons a svg {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .social-icons a:hover {
+    background: rgba(255, 46, 99, 0.5);
+  }
+  
+  .social-icons a:hover svg {
+    transform: scale(1.2);
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  

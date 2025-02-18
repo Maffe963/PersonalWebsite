@@ -1,0 +1,130 @@
+/* src/App.css */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #121212;
+  color: #fff;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Ensure sections take full height */
+section {
+  padding: 2rem 1rem;
+  min-height: 40vh;
+}
+
+/* Header Navigation */
+.header {
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 3rem; /* Adjust spacing */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color:#ff2e63; /* Adjust color */
+  padding: 0.5rem 1rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background: #f0f0f0; /* Light gray highlight */
+  border-radius: 5px;
+  color: black;
+}
+
+/* Hero Section */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 2rem;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  color: #ff2e63;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+.profile-image {
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  background: #1c1c1c;
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.social-icons a svg {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+  background: #ff2e63;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1c1c1c;
+  color: #fff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
