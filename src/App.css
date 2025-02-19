@@ -32,6 +32,7 @@ section {
   padding: 1rem 2rem;
 }
 
+/* Navigation Styles */
 .navbar {
   display: flex;
   justify-content: center;
@@ -54,7 +55,7 @@ section {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 500;
-  color:#ff2e63; /* Adjust color */
+  color: #ff2e63; /* Adjust color */
   padding: 0.5rem 1rem;
   transition: background 0.3s ease, color 0.3s ease;
 }
@@ -63,6 +64,42 @@ section {
   background: #f0f0f0; /* Light gray highlight */
   border-radius: 5px;
   color: black;
+}
+
+/* Mobile-Friendly Navigation (Hamburger Menu) */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 1rem 0;
+  }
 }
 
 /* Hero Section */
@@ -85,10 +122,23 @@ section {
   color: #bbb;
 }
 
+/* Responsive Hero Image */
 .profile-image {
   width: 350px;
   border-radius: 10px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 80%;
+    max-width: 250px;
+  }
 }
 
 /* Social Icons */
@@ -125,6 +175,9 @@ section {
   color: #fff;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
+/* Responsive Sections */
+@media (max-width: 768px) {
+  section {
+    padding: 1.5rem 1rem;
+  }
 }
